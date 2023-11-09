@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <script defer src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Library</h1>
+<div class="books"></div>
+<button class="show">New Book</button>
+<div id="dialog-overlay">
+    <dialog class="pop">
+        <div id="dialog-box">
+            <h2>Add a Book</h2>
+            <form id="dialog-form">
+                <label for="author">Name:</label>
+                <input id="author" name="author" required type="text">
+                <label for="title">Title:</label>
+                <input id="title" name="title" required type="text">
+                <label for="page">Page Number:</label>
+                <input id="page" name="page" required type="number">
+                <label for="read">Read?:</label>
+                <input id="read" name="read" required type="checkbox">
+                <button type="submit" class="submit">Submit</button>
+                <button id="close-dialog-button">Close</button>
+            </form>
+
+        </div>
+    </dialog>
+</div>
+</body>
+</html>
