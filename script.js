@@ -5,16 +5,19 @@ const show = document.querySelector('.show');
 const close = document.querySelector('#close-dialog-button');
 const submit = document.querySelector('.submit');
 
-function Book(author, title, page, read) {
-    this.author = author;
-    this.title = title;
-    this.page = page;
-    this.read = read;
+class Book {
+    constructor(author, title, page, read) {
+        this.author = author;
+        this.title = title;
+        this.page = page;
+        this.read = read;
+    }
+    toggleRead() {
+        this.read = !this.read;
+    }
 }
 
-Book.prototype.toggleRead = function() {
-    this.read = !this.read;
-}
+
 
 
 function addBook() {
